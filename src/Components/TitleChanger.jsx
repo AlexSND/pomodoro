@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TitleChanger = (props) => {
     const mins = parseInt(props.timerLength / 60, 0)
     const sec = (props.timerLength % 60) < 10
