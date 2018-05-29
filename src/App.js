@@ -4,6 +4,7 @@ import './App.css';
 
 import Control from './Components/Control'
 import Timer from './Components/Timer'
+import TitleChanger from './Components/TitleChanger';
 
 class App extends Component {
   constructor(props) {
@@ -132,6 +133,7 @@ class App extends Component {
         <button className="pomodoro__button pomodoro__button-start-stop" onClick={this.stopTimer}>
           Stop
         </button>
+        <TitleChanger timerLength={this.state.timerLength}/>
         <audio id="end" src={process.env.PUBLIC_URL + '/media/ding.mp3'} preload="auto" />
       </div>
     );
