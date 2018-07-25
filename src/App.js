@@ -4,7 +4,8 @@ import './App.css';
 
 import Control from './Components/Control'
 import Timer from './Components/Timer'
-import TitleChanger from './Components/TitleChanger';
+import TitleChanger from './Components/TitleChanger'
+import GithubPagesLink from './Components/GithubPagesLink/GithubPagesLink'
 
 class App extends Component {
   constructor(props) {
@@ -135,6 +136,7 @@ class App extends Component {
         </button>
         <TitleChanger timerLength={this.state.timerLength}/>
         <audio id="end" src={process.env.PUBLIC_URL + '/media/ding.mp3'} preload="auto" />
+        <GithubPagesLink link="https://github.com/AlexSND/pomodoro"/>
       </div>
     );
   }

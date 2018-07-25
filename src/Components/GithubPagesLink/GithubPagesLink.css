@@ -1,0 +1,41 @@
+.gh-pages-link {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #000;
+    font-size: 0;
+    text-align: center;
+}
+
+.gh-pages-link__icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.gh-pages-link__text {
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.gh-pages-link__text::after {
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: 0.1s;
+}
+
+.gh-pages-link__link:hover > .gh-pages-link__text::after {
+    transform: scale(1);
+}
